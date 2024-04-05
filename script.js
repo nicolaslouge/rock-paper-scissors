@@ -28,7 +28,7 @@ function playSingleRound(playerSelection, computerSelection) {
         return "You Won! Paper beats Rock";
     } else {
         computerScore++;
-        return "You Lost! "+ computerSelection + " beats " + playerSelection;
+        return "You Lost! "+ computerSelection + " beats " + playerSelection.charAt(0).toUpperCase() + playerSelection.slice(1).toLowerCase();
     }
 }
 
